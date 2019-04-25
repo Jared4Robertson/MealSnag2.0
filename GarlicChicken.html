@@ -1,5 +1,18 @@
 <!doctype html>
 <html lang="en">
+        <script async="true" src="https://cdn.whisk.com/sdk/shopping-list.js" type="text/javascript"></script>
+        <script>
+          var whisk = whisk || {};
+          whisk.queue = whisk.queue || [];
+        
+          whisk.queue.push(function () {
+            whisk.shoppingList.defineWidget("GHXI-FFNS-IOKS-SAEA", {
+              styles: {
+                size: "large"
+              }
+            });
+          });
+        </script>
   <head>
         <link rel="icon" href="favicon.ico">
     <!-- Required meta tags -->
@@ -71,6 +84,13 @@
                                     1 teaspoon onion powder</p>
                                 
                             </div>
+                            <div id="GHXI-FFNS-IOKS-SAEA">
+                                    <script>
+                                      whisk.queue.push(function () {
+                                        whisk.display("GHXI-FFNS-IOKS-SAEA");
+                                      });
+                                    </script>
+                                  </div>
                             <div class="jumbotron">
                                     <h1 class="display-4">Directions</h1>
                                     <p class="lead">Melt butter in a large skillet over medium high heat. Add chicken and sprinkle with garlic powder, seasoning salt and onion powder. Saute about 10 to 15 minutes on each side, or until chicken is cooked through and juices run clear.</p>
